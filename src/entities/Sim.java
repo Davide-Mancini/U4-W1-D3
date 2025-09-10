@@ -26,6 +26,10 @@ public class Sim {
         System.out.println("lista chiamate:"+Arrays.toString(this.listaChiamate));
     }
 
+    public Chiamata[] getListaChiamate() {
+        return listaChiamate;
+    }
+
     @Override
     public String toString() {
         return "Sim{" +
@@ -33,9 +37,5 @@ public class Sim {
                 ", creditoDisponibile=" + creditoDisponibile +
                 ", listaChiamate=" + Arrays.toString(listaChiamate) +
                 '}';
-    }
-
-    public Chiamata[] getListaChiamate() {
-        return listaChiamate;
     }
 }

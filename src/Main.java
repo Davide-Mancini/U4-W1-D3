@@ -1,5 +1,6 @@
 import entities.*;
 
+import java.util.Arrays;
 import java.util.Random;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
@@ -16,11 +17,16 @@ public class Main {
         Random random=new Random();
 
         Chiamata chiamata1 = new Chiamata(random.nextInt(1,20),random.nextInt(33000000,39000000));
+        Chiamata chiamata2 = new Chiamata(random.nextInt(1,20),random.nextInt(33000000,39000000));
+        Chiamata chiamata3 = new Chiamata(random.nextInt(1,20),random.nextInt(33000000,39000000));
+        Chiamata chiamata4 = new Chiamata(random.nextInt(1,20),random.nextInt(33000000,39000000));
+        Chiamata chiamata5 = new Chiamata(random.nextInt(1,20),random.nextInt(33000000,39000000));
         chiamata1.getNumber();
         chiamata1.getMin();
         Sim sim1= new Sim(347895632);
         sim1.printSim();
         sim1.chiama(chiamata1);
+        System.out.println("listaaaa:"+ Arrays.toString(sim1.getListaChiamate()));
         //-----------------------ES3----------------------------------
         Articolo articolo1= new Articolo(random.nextInt(1,1000),"Ipad Pro",499.99,100);
         Articolo articolo2= new Articolo(random.nextInt(1,1000),"Iphone",999.99,200);

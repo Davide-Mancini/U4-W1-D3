@@ -25,4 +25,12 @@ public class Chiamata {
     public long getMinutiChiamata() {
         return minutiChiamata;
     }
+
+    @Override
+    public String toString() {
+        return "Chiamata{" +
+                "minutiChiamata=" + minutiChiamata +
+                ", numeroChiamato=" + numeroChiamato +
+                '}';
+    }
 }
