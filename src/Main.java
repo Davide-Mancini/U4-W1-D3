@@ -25,8 +25,8 @@ public class Main {
         chiamata1.getMin();
         Sim sim1= new Sim(347895632);
         sim1.printSim();
-        sim1.chiama(chiamata1);
-        System.out.println("listaaaa:"+ Arrays.toString(sim1.getListaChiamate()));
+        Chiamata[]listaChiamate= {chiamata1,chiamata2,chiamata3,chiamata4,chiamata5};
+        System.out.println("listaaaa:"+ Arrays.toString(listaChiamate));
         //-----------------------ES3----------------------------------
         Articolo articolo1= new Articolo(random.nextInt(1,1000),"Ipad Pro",499.99,100);
         Articolo articolo2= new Articolo(random.nextInt(1,1000),"Iphone",999.99,200);
