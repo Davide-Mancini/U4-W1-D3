@@ -17,18 +17,14 @@ public class Sim {
 
     }
     //METODI
-    public void chiama(Chiamata chiamata){
-        listaChiamate[0]= chiamata;
-    }
+
     public void printSim (){
         System.out.println("numero telefono:"+this.numeroTelefono);
         System.out.println("credeto"+this.creditoDisponibile);
-        System.out.println("lista chiamate:"+Arrays.toString(this.listaChiamate));
+
     }
 
-    public Chiamata[] getListaChiamate() {
-        return listaChiamate;
-    }
+
 
     @Override
     public String toString() {

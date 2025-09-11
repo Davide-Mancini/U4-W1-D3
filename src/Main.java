@@ -2,19 +2,31 @@ import entities.*;
 
 import java.util.Arrays;
 import java.util.Random;
+import java.util.Scanner;
 
 //TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
+
+
+        //-----------------------------ES1---------------------------------------------------
+
+
         Rettangolo r1 = new Rettangolo(25,50);
         //System.out.println("l'aerea è :"+ r1.getArea());
         //System.out.println("il perimetro è:"+ r1.getPerimeter());
         r1.print();
         Rettangolo r2 = new Rettangolo(25,50,60,40);
         r2.print2();
-        //------------------------ES2----------------------
+
+
+        //----------------------------------ES2-----------------------------------------------------
+
+
+
         Random random=new Random();
+        System.out.println("effettua chiamate");
 
         Chiamata chiamata1 = new Chiamata(random.nextInt(1,20),random.nextInt(33000000,39000000));
         Chiamata chiamata2 = new Chiamata(random.nextInt(1,20),random.nextInt(33000000,39000000));
@@ -27,7 +39,22 @@ public class Main {
         sim1.printSim();
         Chiamata[]listaChiamate= {chiamata1,chiamata2,chiamata3,chiamata4,chiamata5};
         System.out.println("listaaaa:"+ Arrays.toString(listaChiamate));
-        //-----------------------ES3----------------------------------
+
+
+
+
+
+
+
+        //-------------------------------ES3--------------------------------------------
+
+
+
+
+
+
+
+
         Articolo articolo1= new Articolo(random.nextInt(1,1000),"Ipad Pro",499.99,100);
         Articolo articolo2= new Articolo(random.nextInt(1,1000),"Iphone",999.99,200);
         Articolo articolo3= new Articolo(random.nextInt(1,1000),"S25 Ultra",999.99,400);
